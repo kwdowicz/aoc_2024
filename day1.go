@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"math"
 	"os"
 	"slices"
@@ -10,11 +9,6 @@ import (
 	"strings"
 )
 
-func main() {
-	left, right := readFileToLists("day1_input.txt")
-	fmt.Printf("Distance: %d\n", sumOfDistances(left, right))
-	fmt.Printf("Similarity: %d\n", similarity(left, right))
-}
 
 func similarity(left, right []int) int {
 	counter := make(map[int]int)
